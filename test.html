@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RCXUE</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <style id="style-1-cropbar-clipper">
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+    }
+
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <a href="#"><img src="./rcx.jpg" style="width: 125px; height: 90px"></a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">my account</a></li>
+                            <li><a href="#">退出登录</a></li>
+                            <li><a href="#">关于本站</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">禅</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="container-fluid" >
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" style="background-color: #265a88;">
+
+                <div class="col-md-1"></div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" style="color: #ffffff; border-right: 1px solid gainsboro">首页</a></li>
+                        <li><a href="http://localhost:63342/xiaoma/test.html#" style="color: #ffffff; border-right: 1px solid gainsboro">jobs</a></li>
+                        <li><a href="http://localhost:63342/xiaoma/test.html#" style="color: #ffffff; border-right: 1px solid gainsboro">标签</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="container-fluid">
+            <div class="col-md-2"><p class="text-center" style="font-size: large;text-align: left">Company Caption</p></div>
+            <div class="col-md-8"><p style="font-size: large; margin-left: 1%">Restaurant Manager</p></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="col-lg-12" style="border: 1px solid #000000">
+                <p style="margin-top: 5px; font-size: larger; margin-left: 20%">Stage1: Select Candidates</p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</head>
+
+<body>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2" style="margin-top: 30px;">
+        <div class="visible-lg">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ><span class="caret"></span></button>
+                    <button type="button" class="btn btn-default" style="margin-left: 5px">清空过滤</button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="alert alert-dismissible" role="alert" style="background-color: #000000; margin-top: 20px; margin-bottom: 5px; color: #ffffff; height: 100%; overflow: hidden;">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <div style="float: left">Experience:<br/>less than 1 year</div>
+                <div style="float: right; color: lightgreen"><del style="color: #ffffff">203</del><br/>214</div>
+            </div>
+            <div class="alert alert-dismissible" role="alert" style="background-color: #000000; color: #ffffff; height: 100%; overflow: hidden; margin-bottom: 5px">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div style="float: left">Degree<br/>Bachelor or higher</div>
+                <div style="float: right; color: lightgreen"><del style="color: #ffffff">202</del><br/>177</div>
+            </div>
+            <div class="alert alert-dismissible" role="alert" style="background-color: #000000; color: #ffffff; height: 100%; overflow: hidden">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div style="float: left">City<br/>shanghai</div>
+                <div style="float: right; color: lightgreen"><del style="color: #ffffff">177</del><br/>174</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <form style="width:auto;margin-top: 30px;">
+            <table class="table table-condensed" style="border-bottom: 1px solid gainsboro">
+                <thead>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" placeholder="Search in Names" style="height: 35px; width: 110px;"></td>
+                    <td><div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            lessthan1year<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">lessthan1yesr</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    </td>
+                    <td><div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            不限<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">lessthan1yesr</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    </td>
+                    <td><div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            学士<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">lessthan1yesr</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    </td>
+                    <td><input type="text" placeholder="Phone No." style="height: 35px;width: 70px;"></td>
+                    <td></td>
+                    <td>
+                        <span id="cyc1" style="color: blue; font-size: 30px; position: relative; top: 10px;">●</span>
+                        <span id="cyc2" style="color: yellow; font-size: 30px; position: relative; top: 10px;">●</span>
+                        <span id="cyc3" style="color: green; font-size: 30px; position: relative; top: 10px;">●</span>
+                        <span id="cyc4" style="color:red; font-size: 30px; position: relative; top: 10px;">●</span>
+                    </td>
+
+                </tr>
+                <tr style="color: white; height: 50px;" bgcolor="black">
+                    <td style="vertical-align: middle"><input type="checkbox" class="cb1"></td>
+                    <td style="vertical-align: middle">排名</td>
+                    <td style="vertical-align: middle"><input type="button" style="background-color: #000000; border-color: #000000; color: #ffffff" value="姓名" id="sortByName"></td>
+                    <td style="vertical-align: middle">工作年限</td>
+                    <td style="vertical-align: middle">最近一个职位</td>
+                    <td style="vertical-align: middle">学位</td>
+                    <td style="vertical-align: middle">联系电话</td>
+                    <td style="vertical-align: middle"></td>
+                    <td style="vertical-align: middle">状态</td>
+                </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+
+            <div class="row">
+                <div class="col-md-4" style="margin-top: 20px;">
+                    <span>Display</span>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">不限<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">lessthan1yesr</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                    <span>candidates per page</span>
+                </div>
+                <div class="col-md-6">
+                    <nav>
+                        <ul class="pagination">
+                            <li><a href="#">first</a></li>
+                            <li><a href="#">Previous</a> </li>
+                            <li class="active"><a href="#" >1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">Next</a></li>
+                            <li><a href="#">last</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div style="margin-left: 0px;"></div>
+        </form>
+        <ul style="list-style: none;margin: 0px; padding: 0px">Status Legend
+            <li><span style="font-size: 25px;color: blue;">●</span>Interview</li>
+            <li><span style="font-size: 25px;color: yellow;">●</span>Offer</li>
+            <li><span style="font-size: 25px;color: green;">●</span>Hire</li>
+            <li><span style="font-size: 25px;color: red;">●</span>Rejected</li>
+        </ul>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div id="naptha_container0932014_0707"></div>
+</body>
+<!-- /javascript -->
+<script id="tr" type="text/template">
+
+    <%_.each(datas, function(item) {%>
+    <tr>
+        <td><input type="checkbox" class="cb2"></td>
+        <td><%=item.rank%></td>
+        <td><%=item.name%></td>
+        <td><%=item.year%></td>
+        <td><%=item.work%></td>
+        <td><%=item.education%></td>
+        <td><%=item.tel%></td>
+        <td><input type="button" value="Resume" class="resume" onclick="remuseOnclick('<%=item.rank%>')">
+            <input type="button" value="Answer" class="answer"></td>
+        <td>
+            <div id="div_<%=item.rank%>">
+                <span id="cyc_<%=item.rank%>_1" name="status7" class="span_status7_before_class1" >●</span>
+                <span id="cyc_<%=item.rank%>_2" name="status7" class="span_status7_before_class2" >●</span>
+                <span id="cyc_<%=item.rank%>_3" name="status7" class="span_status7_before_class3" >●</span>
+                <span id="cyc_<%=item.rank%>_4" name="status7" class="span_status7_before_class4">●</span>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="9" style="border-top:0px solid gainsboro">
+            <div id="div_content<%=item.rank%>" style="display:none;">
+                **个人信息**
+
+                ---
+                - 马倩雯/女/1990
+                - 研究生在读/南京大学软件学院/软件工程
+                - 本科/西安电子科技大学计算机系/网络工程
+                - 手机: 15261892983
+                - Email: xmisok@gmail.com
+                - 个人博客: [http://misok.github.io](http://misok.github.io)
+                - Github: [https://github.com/misok](https://github.com/misok)
+
+                **项目经历**
+
+                ---
+
+                - 基于知识库的邮票搜素引擎
+                - 项目由16人历时16周完成，基于《邮票总目录》构建了邮票知识库，并从其中抽取出所有邮票和对应信息存入知识库。从淘宝/邮票论坛爬取了邮票商品信息，交给图片处理组分割出有效邮票，处理结果交由后台搜素框架与知识库邮票进行匹配，在手机app上返回对应邮票信息与购买链接。同时做出web端和手机端个人在线邮册。供集邮爱好者和邮票交易者使用
+                - 爬虫和搜素框架采用Python/图像处理使用OpenCV和Matlab/手机APP基于Andriod平台/知识库使用MySQL
+                - 我负责手机端邮票照片的处理/手机端在线邮册的实现
+
+                - 虚拟个人助理
+                - 实现真实环境下小范围高度人脸识别/针对普通话表达的常用问题识别/基于语音合成的问题回答
+                - 项目由10人历时三个月完成
+                - 我负责语音识别的实现/中文歌词库的构建/歌曲的识别与匹配
+
+
+                **技能清单**
+
+                ---
+                - 熟悉HTML/CSS/javascript/jQuery
+                - 熟悉Python/Java
+                - 熟悉Photoshop/lightroom
+                - 了解C/C++/MySQL/Angular.js/Backbone.js
+                - 熟悉的平台：intelliJ IDEA/Sublime/Mou/eclipse
+
+
+                **求职说明**
+
+                ---
+                - 现人在南京市鼓楼区汉口路22号南京大学
+                - 希望找到一份前端实习的工作，最早2014年1月18号可以开始实习
+                - 接受职位调整，实习地点倾向于杭州/南京/上海
+                - 近五年目标是把上述熟悉变为精通，把上述了解变为熟悉，并正在为之奋斗
+
+            </div>
+        </td>
+    </tr>
+    <%});%>
+</script>
+<script type="text/javascript">
+    function remuseOnclick(index) {
+        var isDisplay = $("#div_content"+index).css("display");
+        if(isDisplay=="block"){
+            $("#div_content"+index).css("display","none");
+        }else{
+            $("#div_content"+index).css("display","block");
+        }
+    }
+    $(document).ready(function() {
+        var datas = [
+            {
+                rank: '1',
+                name: 'maqianwen',
+                year: '2 years',
+                work: '研究人员',
+                education: '学士',
+                tel: '123456'
+            },
+            {
+                rank: '2',
+                name: 'lixx',
+                year: 'less than 1 year',
+                work: '清洁',
+                education: '硕士',
+                tel: '654321'
+            },
+            {
+                rank: '3',
+                name: 'ddd',
+                year: 'less than 3 year',
+                work: '清洁',
+                education: '大专',
+                tel: '654321'
+            },
+            {
+                rank: '4',
+                name: 'xxxixx',
+                year: 'less than 1 year',
+                work: '科研',
+                education: '硕士',
+                tel: '654321'
+            },
+            {
+                rank: '5',
+                name: 'oop',
+                year: 'less than 5 year',
+                work: '清洁',
+                education: '硕士',
+                tel: '654321'
+            },
+            {
+                rank: '6',
+                name: 'node',
+                year: 'less than 6 year',
+                work: '清洁',
+                education: '硕士',
+                tel: '654321'
+            }
+        ];
+        $("tbody").html( _.template($("#tr").html())({'datas':datas}));
+
+        $("#sortByName").click(function() {
+            var datas = [
+                {
+                    rank: '1',
+                    name: 'maqianwen',
+                    year: '2 years',
+                    work: '研究人员',
+                    education: '学士',
+                    tel: '123456'
+                },
+                {
+                    rank: '2',
+                    name: 'lixx',
+                    year: 'less than 1 year',
+                    work: '清洁',
+                    education: '硕士',
+                    tel: '654321'
+                },
+                {
+                    rank: '3',
+                    name: 'ddd',
+                    year: 'less than 3 year',
+                    work: '清洁',
+                    education: '大专',
+                    tel: '654321'
+                },
+                {
+                    rank: '4',
+                    name: 'xxxixx',
+                    year: 'less than 1 year',
+                    work: '科研',
+                    education: '硕士',
+                    tel: '654321'
+                },
+                {
+                    rank: '5',
+                    name: 'oop',
+                    year: 'less than 5 year',
+                    work: '清洁',
+                    education: '硕士',
+                    tel: '654321'
+                },
+                {
+                    rank: '6',
+                    name: 'node',
+                    year: 'less than 6 year',
+                    work: '清洁',
+                    education: '硕士',
+                    tel: '654321'
+                }
+            ];
+            function cmp(data1, data2) {
+                return data1.name > data2.name
+            }
+            $("tbody").html( _.template($("#tr").html())({'datas': datas.sort(cmp)}));
+            $("tbody").html( _.template($("#tr").html())({'datas': datas.sort(cmp)}));
+            $("span[name='status7']").click(function() {
+                var idStr = $(this).attr("id");
+                var checkIndex = idStr.split("_")[2];
+                var id = idStr.split("_")[0] + "_" + idStr.split("_")[1] + "_";
+                $("div[id='div_" + idStr.split("_")[1] + "']").fadeOut(1000, function () {
+                    for (i = 1; i <= 4; i++) {
+                        if (i == checkIndex) {
+                            $("#" + id + i).attr("class", "span_status7_class" + i);
+                            $("#" + id + i).text("●");
+                        } else {
+                            $("#" + id + i).attr("class", "span_status7_blank");
+                            $("#" + id + i).text("○");
+
+                        }
+                    }
+                    $("div[id='div_" + idStr.split("_")[1] + "']").fadeIn(1000);
+                });
+            });
+        });
+        $("span[name='status7']").click(function(){
+            var idStr = $(this).attr("id");
+            var checkIndex = idStr.split("_")[2];
+            var id=idStr.split("_")[0]+"_"+idStr.split("_")[1]+"_";
+            $("div[id='div_"+idStr.split("_")[1]+"']").fadeOut(1000,function(){
+                for(i=1;i<=4;i++){
+                    if(i==checkIndex){
+                        $("#"+id+i).attr("class","span_status7_class"+i);
+                        $("#"+id+i).text("●");
+                    }else{
+                        $("#"+id+i).attr("class","span_status7_blank");
+                        $("#"+id+i).text("○");
+
+                    }
+                }
+                $("div[id='div_"+idStr.split("_")[1]+"']").fadeIn(1000);
+            });
+        });
+    });
+</script>
+</html>
